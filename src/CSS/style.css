@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    background-color: #ff9a6c;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 95px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu a{
+    display: block;
+    color: #ffff;
+    font-weight: 600;
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu a:hover {
+    background-color: #f8ab87;
+    border-radius: 5px;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    /*padding: topo, direita, baixo, esquerda*/
+    position: relative;
+}
+
+h1, h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.btn-marcar-consulta{
+    background-color: #ff725e;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    /*padding: vertical, horizontal*/
+}
+
+.btn-conhecer-clinica{
+    background-color: transparent;
+    color: #ff725e;
+    text-underline-offset: 4px;
+    padding: 16px 32px;
+}
+
+.imagem-fundo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#clinica{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+#clinica li{
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+#farmacia{
+    padding: 64px 80px;
+    text-align: center;
+}
+
+#farmacia img{
+    margin: 64px auto;
+}
+
+#farmacia .paragrafo{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida {
+    position: relative;
+}
+
+.duvida h3 {
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo {
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    padding: 24px;
+    opacity: 1;
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+}
+
+footer img,
+footer .titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer nav a {
+    color: #263138;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+footer p a {
+    color: #e35c2b;
+    text-decoration: none;
+}
+
+#copyright {
+    background-color: #263138;
+    color: #ffff;
+    text-align: center;
+    padding: 24px;
+}
+
+#copyright a {
+    color: #ff9a6c;
+}

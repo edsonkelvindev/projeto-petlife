@@ -1,0 +1,210 @@
+@media (max-width: 880px) {
+    .menu {
+       position: absolute;
+       width: 100%;
+       top: 72px;
+       right: -0;
+       background-color: #ff9a6c;
+       transition: .5s ease-in;
+       z-index: 1000;
+       height: 0;
+       padding-left: 15px;
+       visibility: hidden;
+    }
+
+    .nav.active .menu {
+        display: flex;
+        height: 43px;
+        visibility: visible;
+    }
+
+    .btn-mobile {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #ffff;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 0.5px solid #ffff;
+        padding: 8px;
+        cursor: pointer;
+
+    }
+
+    .btn-mobile:hover {
+        background-color: #f8ab87;
+    }
+
+    .menu-hamburger {
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    .menu-hamburger::after, .menu-hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    .nav.active .menu-hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .menu-hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .menu-hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .menu li a {
+        padding: 8px;
+        margin-top: 8px;
+        display: flex;
+    }
+
+    .home {
+        padding: 24px 10px 24px 10px;
+        /*padding: topo, direita, baixo, esquerda*/
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .paragrafo {
+        font-size: 15px;
+    }
+
+    .garota-cachorro {
+        width: 482px;
+        height: 450px;
+    }
+
+    .btn-cunsulta {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-marcar-consulta {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    .btn-conhecer-clinica {
+        font-size: 13px;
+        padding: 12px 15px;
+    }
+
+    #clinica {
+        padding: 24px 10px 24px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 50px;
+    }
+
+    #clinica ul li {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #farmacia {
+        padding: 24px 10px 24px 10px;
+        margin-bottom: 50px;
+    }
+
+    #farmacia img {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 380px;
+        padding: 0;
+    }
+
+    #duvidas {
+        padding: 24px 10px 24px 10px;
+        display: flex;
+        flex-direction: column;
+        grid-area: 32px;
+    }
+
+    #dividas img {
+        width: 482px;
+        height: 450px;
+    }
+
+    .duvida h3 {
+        font-size: 16px;
+        padding-right: 50px;
+        padding: 20px 50px 20px 20px;
+        
+    }
+
+    footer {
+        padding: 24px 10px 24px 10px;
+        gap: 30px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .titulo {
+        font-size: 14px;
+    }
+
+     nav a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn-marcar-consulta {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+
+    .btn-conhecer-clinica {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 1290px) {
+
+    .home #inicio img {
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .imagem-fundo {
+        width: 100%;
+        position: relative;
+        margin-top: -100px;
+        z-index: -1;
+        transition: -5s;
+    }
+
+    .home {
+        flex-direction: column;
+        padding-bottom: 48px;
+        max-width: 100%;
+    }
+
+}
