@@ -82,11 +82,13 @@
 
     h1, h2 {
         font-size: 28px;
+        padding: 0 20px;
         text-align: center;
     }
 
     .paragrafo {
         font-size: 15px;
+        padding: 0 20px;
     }
 
     .garota-cachorro {
@@ -114,7 +116,7 @@
         padding: 24px 10px 24px 10px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 22px;
         margin-bottom: 50px;
     }
 
@@ -124,15 +126,16 @@
     }
 
     #farmacia {
-        padding: 24px 10px 24px 10px;
-        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
     }
 
     #farmacia img {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        width: 380px;
+        width: 100%;
+        margin: 0;
         padding: 0;
     }
 
@@ -143,9 +146,9 @@
         grid-area: 32px;
     }
 
-    #dividas img {
-        width: 482px;
-        height: 450px;
+    .consultar-duvidas{
+        width: 100%;
+        padding: 0 30px;
     }
 
     .duvida h3 {

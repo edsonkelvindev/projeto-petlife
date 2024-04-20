@@ -61,6 +61,10 @@ h1, h2{
 }
 
 .paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     line-height: 150%;
     margin-bottom: 32px;
 }
@@ -91,9 +95,17 @@ h1, h2{
 
 #clinica{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 64px;
     padding: 64px 80px;
+}
+
+#clinica .paragrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 #clinica li{
